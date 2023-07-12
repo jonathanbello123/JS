@@ -83,11 +83,10 @@ pizzas.forEach((pizzasTodas) => {
 console.log("-------------------------------------------------------------------------------")
 console.log("Ejercicio 4: Todos los ingredientes de cada pizza En cada iteración imprimir los ingredientes de la pizza que se esta recorriendo")
 
-
-pizzas.forEach((pizzasIngredientes) => {
-  console.log("la " + pizzasIngredientes.nombre + " tiene los siguientes ingredientes: " + pizzasIngredientes.ingredientes)
+pizzas.forEach((pizza) => {
+  pizza.ingredientes.forEach((ingrediente) => {
+    console.log("la " + pizza.nombre + " tiene " + ingrediente)
+  }
+  )
 }
 )
-
-
-
